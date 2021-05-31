@@ -18,7 +18,7 @@ while name_ko != '끝':
         continue
     name_en = df.loc[df['name_ko'] == name_ko, 'name_en'].item()
 
-    print('\x1b[H', end='')
+    print("\x1b[2J", end='')
 
     p = pypokedex.get(name=name_en)
 
